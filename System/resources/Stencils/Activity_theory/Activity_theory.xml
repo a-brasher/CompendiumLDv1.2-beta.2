@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE stencil [
+<!ELEMENT stencil (#PCDATA | items)*>
+<!ATTLIST stencil
+name CDATA #REQUIRED
+tabname CDATA #REQUIRED
+>
+<!ELEMENT items (#PCDATA | item)*>
+<!ELEMENT item (#PCDATA | tags)*>
+<!ATTLIST item
+type CDATA #REQUIRED
+shortcut CDATA #REQUIRED
+label CDATA #REQUIRED
+tooltip CDATA #REQUIRED
+image CDATA #REQUIRED
+paletteimage CDATA #REQUIRED
+backgroundimage CDATA #IMPLIED
+template CDATA #IMPLIED
+>
+<!ELEMENT tags (#PCDATA | tag)*>
+<!ELEMENT tag (#PCDATA)>
+<!ATTLIST tag
+id CDATA #REQUIRED
+author CDATA #REQUIRED
+created CDATA #REQUIRED
+lastModified CDATA #REQUIRED
+name CDATA #REQUIRED
+description CDATA #REQUIRED
+behavior CDATA #REQUIRED
+>
+]>
+
+<stencil name="Activity theory" tabname="Activity theory">
+	<items>
+		<item label="Activity" tooltip="Activity" image="id_activity.png" paletteimage="id_activity_toolbar.png" backgroundimage="" template="" shortcut="1" type="2">
+			<tags>
+				<tag id="169254221183024392174" author="No Description" created="1183024392174" lastModified="1183024392174" name="^_ld^activity_^" description="No Behavior" behavior="Administrator"/>
+			</tags>
+		</item>
+		<item label="Effort" tooltip="Division of effort" image="decision.png" paletteimage="" backgroundimage="" template="" shortcut="-1" type="9">
+		</item>
+		<item label="Learning outcome" tooltip="Learning outcome" image="id_learning-outcome.png" paletteimage="" backgroundimage="" template="" shortcut="3" type="9">
+			<tags>
+				<tag id="137108541361214844076984" author="No Behavior" created="1214844076984" lastModified="1214844076984" name="^_ld^learning_outcome_^" description="Administrator" behavior="No Description"/>
+			</tags>
+		</item>
+		<item label="Object" tooltip="Object" image="id_output.png" paletteimage="" backgroundimage="" template="" shortcut="2" type="9">
+			<tags>
+				<tag id="169254221183024494032" author="No Description" created="1183024494032" lastModified="1183024494032" name="^_ld^output_^" description="No Behavior" behavior="Administrator"/>
+			</tags>
+		</item>
+		<item label="Resources" tooltip="Resources" image="id_resource.png" paletteimage="id_resource_toolbar.png" backgroundimage="" template="" shortcut="4" type="9">
+			<tags>
+				<tag id="169254221183024509828" author="No Description" created="1183024509828" lastModified="1183024509828" name="^_ld^resource_^" description="No Behavior" behavior="Administrator"/>
+			</tags>
+		</item>
+		<item label="Rules" tooltip="Rules" image="note.png" paletteimage="" backgroundimage="" template="" shortcut="-1" type="9">
+		</item>
+		<item label="Subject" tooltip="Subject" image="id_role.png" paletteimage="id_role_toolbar.png" backgroundimage="" template="" shortcut="5" type="9">
+			<tags>
+				<tag id="169254221183024535695" author="No Description" created="1183024535695" lastModified="1183024535695" name="^_ld^role_^" description="No Behavior" behavior="Administrator"/>
+			</tags>
+		</item>
+		<item label="Tools" tooltip="Tools" image="id_tool.png" paletteimage="id_tool_toolbar.png" backgroundimage="" template="" shortcut="8" type="9">
+			<tags>
+				<tag id="169254221183024627481" author="No Description" created="1183024627481" lastModified="1183024627481" name="^_ld^vle^tool_^" description="No Behavior" behavior="Administrator"/>
+			</tags>
+		</item>
+		<item label="Activity theory" tooltip="Activity theory map" image="map.png" paletteimage="" backgroundimage="" template="activity-theory-template.xml" shortcut="-1" type="2">
+		</item>
+	</items>
+</stencil>

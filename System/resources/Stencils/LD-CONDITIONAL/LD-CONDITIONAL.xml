@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE stencil [
+<!ELEMENT stencil (#PCDATA | items)*>
+<!ATTLIST stencil
+name CDATA #REQUIRED
+tabname CDATA #REQUIRED
+>
+<!ELEMENT items (#PCDATA | item)*>
+<!ELEMENT item (#PCDATA | tags)*>
+<!ATTLIST item
+type CDATA #REQUIRED
+shortcut CDATA #REQUIRED
+label CDATA #REQUIRED
+tooltip CDATA #REQUIRED
+image CDATA #REQUIRED
+paletteimage CDATA #REQUIRED
+backgroundimage CDATA #IMPLIED
+template CDATA #IMPLIED
+>
+<!ELEMENT tags (#PCDATA | tag)*>
+<!ELEMENT tag (#PCDATA)>
+<!ATTLIST tag
+id CDATA #REQUIRED
+author CDATA #REQUIRED
+created CDATA #REQUIRED
+lastModified CDATA #REQUIRED
+name CDATA #REQUIRED
+description CDATA #REQUIRED
+behavior CDATA #REQUIRED
+>
+]>
+
+<stencil name="LD-CONDITIONAL: use to add conditions and different pathways to your learning design" tabname="LD-COND">
+	<items>
+		<item label="True" tooltip="True" image="id_true.png" paletteimage="id_true.png" backgroundimage="" template="" shortcut="-1" type="9">
+			<tags>
+				<tag id="137108541361201194323363" author="No Description" created="1201194323363" lastModified="1201194323363" name="^_ld^true_^" description="No Behavior" behavior="Andrew Brasher"/>
+			</tags>
+		</item>
+		<item label="False" tooltip="False" image="id_false.png" paletteimage="id_false.png" backgroundimage="" template="" shortcut="-1" type="9">
+			<tags>
+				<tag id="137108541361201194373884" author="No Description" created="1201194373884" lastModified="1201194373884" name="^_ld^false_^" description="No Behavior" behavior="Andrew Brasher"/>
+			</tags>
+		</item>
+		<item label="Condition" tooltip="Condition" image="id_condition.png" paletteimage="id_condition.png" backgroundimage="" template="" shortcut="-1" type="9">
+			<tags>
+				<tag id="137108541361201194301002" author="No Description" created="1201194301002" lastModified="1201194301002" name="^_ld^condition_^" description="No Behavior" behavior="Andrew Brasher"/>
+			</tags>
+		</item>
+	</items>
+</stencil>

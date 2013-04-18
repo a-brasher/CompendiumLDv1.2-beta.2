@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE stencil [
+<!ELEMENT stencil (#PCDATA | items)*>
+<!ATTLIST stencil
+name CDATA #REQUIRED
+tabname CDATA #REQUIRED
+>
+<!ELEMENT items (#PCDATA | item)*>
+<!ELEMENT item (#PCDATA | tags)*>
+<!ATTLIST item
+type CDATA #REQUIRED
+shortcut CDATA #REQUIRED
+label CDATA #REQUIRED
+tooltip CDATA #REQUIRED
+image CDATA #REQUIRED
+paletteimage CDATA #REQUIRED
+backgroundimage CDATA #IMPLIED
+template CDATA #IMPLIED
+>
+<!ELEMENT tags (#PCDATA | tag)*>
+<!ELEMENT tag (#PCDATA)>
+<!ATTLIST tag
+id CDATA #REQUIRED
+author CDATA #REQUIRED
+created CDATA #REQUIRED
+lastModified CDATA #REQUIRED
+name CDATA #REQUIRED
+description CDATA #REQUIRED
+behavior CDATA #REQUIRED
+>
+]>
+
+<stencil name="Places for mobile learning" tabname="Places">
+	<items>
+		<item label="Home" tooltip="Home (icon provided by the Noun project)" image="home-location.png" paletteimage="home-location.png" backgroundimage="" template="" shortcut="-1" type="9">
+		</item>
+		<item label="Bus" tooltip="On the bus (icon provided by the Noun project)" image="bus.png" paletteimage="bus.png" backgroundimage="" template="" shortcut="-1" type="9">
+		</item>
+		<item label="Shops" tooltip="Shopping (icon provided by the Noun project)" image="shopping-trolley.png" paletteimage="shopping-trolley.png" backgroundimage="" template="" shortcut="-1" type="9">
+		</item>
+		<item label="Church" tooltip="Church" image="church.png" paletteimage="church.png" backgroundimage="" template="" shortcut="-1" type="9">
+		</item>
+	    <item label="Museum" tooltip="Museum" image="museum.png" paletteimage="museum.png" backgroundimage="" template="" shortcut="-1" type="9">
+	    </item>
+	    <item label="City" tooltip="City" image="city.png" paletteimage="city.png" backgroundimage="" template="" shortcut="-1" type="9">
+	    </item>
+	</items>
+</stencil>

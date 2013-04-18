@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE linkgroup [
+<!ELEMENT linkgroup (#PCDATA | linktypes)*>
+<!ATTLIST linkgroup
+name CDATA #REQUIRED
+id CDATA #REQUIRED
+default CDATA #REQUIRED
+>
+<!ELEMENT linktypes (#PCDATA | linktype)*>
+<!ELEMENT linktype (#PCDATA)>
+<!ATTLIST linktype
+id CDATA #REQUIRED
+name CDATA #REQUIRED
+colour CDATA #REQUIRED
+label CDATA #REQUIRED
+>
+]>
+
+<linkgroup name="Learning Design" id="169254221179416221967" default="137108481891281696405779">
+	<linktypes>
+		<linktype id="169254221179416222014" name="Blue" colour="-16776961" label=""/>
+		<linktype id="169254221179416222030" name="Blue (sky)" colour="-16711681" label=""/>
+		<linktype id="169254221179416222108" name="Blue (dark)" colour="-13434727" label=""/>
+		<linktype id="169254221179416221998" name="Green" colour="-16711936" label=""/>
+		<linktype id="169254221179416222092" name="Green (dark)" colour="-10841011" label=""/>
+		<linktype id="169254221179416221983" name="Grey" colour="-8355712" label=""/>
+		<linktype id="169254221179416222045" name="Pink" colour="-20561" label=""/>
+		<linktype id="169254221179416222061" name="Red" colour="-65536" label=""/>
+		<linktype id="169254221179416222077" name="Yellow" colour="-14336" label=""/>
+		<linktype id="137108481891281696293997" name="Yellow (pale)" colour="-2960544" label=""/>
+		<linktype id="137108481891281696405779" name="Black" colour="-16777216" label=""/>
+	</linktypes>
+</linkgroup>
